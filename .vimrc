@@ -189,6 +189,8 @@ map <Leader>rs :InterruptVimTmuxRunner<CR>
 "  autocmd bufwritepost .vimrc source $MYVIMRC
 "endif
 
+" ===== nerdcommenter settings =====
+let g:NERDSpaceDelims = 1
 
 " ===== python-mode settings =====
 " Load pylint code plugin
