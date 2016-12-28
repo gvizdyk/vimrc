@@ -90,6 +90,7 @@ set history=1000
 set foldmethod=indent
 " disabled by default
 set nofoldenable
+" set foldcolumn=1
 
 "filetype on
 "python autocomplete
@@ -185,9 +186,10 @@ map <Leader>rs :InterruptVimTmuxRunner<CR>
 
 
 "" Source the vimrc file after saving it
-"if has("autocmd")
+if has("autocmd")
+    autocmd BufRead,BufNewFile *.zcml :set syntax=html
 "  autocmd bufwritepost .vimrc source $MYVIMRC
-"endif
+endif
 
 " ===== nerdcommenter settings =====
 let g:NERDSpaceDelims = 1
