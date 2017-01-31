@@ -42,7 +42,8 @@ let g:airline_symbols.branch = '⎇'
 let g:indentLine_char = '┆'
 
 " make background dark, i.e black
-set background=light
+" set background=light
+set background=dark
 
 " show the current mode of the editor
 set showmode
@@ -80,7 +81,7 @@ set noswapfile
 
 "do not highlight cursor line
 set cursorline
-highlight CursorLine cterm=none ctermbg=LightYellow
+highlight CursorLine cterm=none ctermbg=black
 "highlight Comment ctermbg=none ctermfg=red
 
 " Store a ton of history (default is 20)
@@ -296,3 +297,6 @@ set undofile
 set undolevels=1000
 "maximum number lines to save for undo on a buffer reload
 set undoreload=10000
+
+" Run jshint
+set runtimepath+=~/.vim/bundle/jshint2.vim
