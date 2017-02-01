@@ -83,6 +83,10 @@ set noswapfile
 set cursorline
 highlight CursorLine cterm=none ctermbg=black
 "highlight Comment ctermbg=none ctermfg=red
+hi Search cterm=NONE ctermfg=white ctermbg=red
+hi SignColumn cterm=NONE ctermfg=white ctermbg=darkgreen
+" hi SignColumn guifg=Black guibg=DarkGray ctermfg=Black ctermbg=DarkGray gui=NONE cterm=NONE
+
 
 " Store a ton of history (default is 20)
 set history=1000
